@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Roast &amp; Co. – artisan coffee for every moment. Small-batch coffee, roasted in Gent.">
+    <title>Roast &amp; Co. – artisan coffee for every moment</title>
+
+    <!-- Bootstrap 5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Google Fonts: Fraunces (titels) en Manrope (tekst) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600;1,9..144,700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Eigen stijl: altijd NA Bootstrap laden -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-root-margin="0px 0px -40%">
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-roast sticky-top" data-bs-theme="dark"
+        aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+                <i class="bi bi-cup-hot-fill text-caramel" aria-hidden="true"></i>
+                Roast &amp; Co.
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#favorites">Favorites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a class="btn btn-roast ms-lg-3 mb-3 mb-lg-0" href="#visit">Visit us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero bg-cream py-5 py-lg-6">
+            <div class="container">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-lg-6">
+                        <span class="badge rounded-pill border border-dark-subtle text-body fw-medium px-3 py-2 mb-4">
+                            <i class="bi bi-stars text-caramel me-1" aria-hidden="true"></i> New autumn menu
+                        </span>
+                        <h1 class="display-3 fw-bold mb-4">Coffee that starts <em class="text-caramel">your story</em>
+                        </h1>
+                        <p class="lead text-body-secondary mb-4">Small-batch beans, roasted in-house every week and
+                            brewed with care. Stay for a slow morning or grab your favourite on the go.</p>
+                        <div class="d-flex flex-wrap gap-3 mb-5">
+                            <a class="btn btn-roast btn-lg px-4" href="#menu">See the menu</a>
+                            <a class="btn btn-outline-dark btn-lg px-4" href="#visit">
+                                <i class="bi bi-geo-alt me-1" aria-hidden="true"></i> Find us
+                            </a>
+                        </div>
+                        <div class="row row-cols-3 g-3">
+                            <div class="col">
+                                <p class="h2 fw-bold mb-0">12</p>
+                                <p class="small text-body-secondary mb-0">single origins</p>
+                            </div>
+                            <div class="col">
+                                <p class="h2 fw-bold mb-0">4.9</p>
+                                <p class="small text-body-secondary mb-0">Google rating</p>
+                            </div>
+                            <div class="col">
+                                <p class="h2 fw-bold mb-0">2015</p>
+                                <p class="small text-body-secondary mb-0">roasting since</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-img position-relative">
+                            <img src="img/hero.jpg" class="img-fluid w-100 rounded-5 shadow-lg object-fit-cover"
+                                alt="A cappuccino with latte art on a blue saucer" width="900" height="1100">
+                            <div class="card border-0 shadow position-absolute bottom-0 start-0 m-3 m-md-4">
+                                <div class="card-body d-flex align-items-center gap-3 py-3">
+                                    <span class="icon-circle"><i class="bi bi-fire" aria-hidden="true"></i></span>
+                                    <div>
+                                        <p class="fw-bold mb-0">Fresh roast</p>
+                                        <p class="small text-body-secondary mb-0">every Monday morning</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="favorites" class="py-5 py-lg-6">
+            <div class="container">
+                <div class="row align-items-end justify-content-between g-3 mb-5">
+                    <div class="col-lg-6">
+                        <p class="eyebrow">Our favourites</p>
+                        <h2 class="display-5 fw-bold mb-0">Three cups our regulars love</h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="text-body-secondary mb-0">Every drink starts with our house espresso blend:
+                            chocolatey, round and roasted just a few days ago.</p>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <article class="card product-card h-100 border-0 shadow-sm">
+                            <div class="ratio ratio-4x3">
+                                <img src="img/espresso.jpg" class="card-img-top object-fit-cover"
+                                    alt="A cup of espresso seen from above" loading="lazy">
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+                                    <h3 class="card-title h4 mb-0">Classic Espresso</h3>
+                                    <span class="badge rounded-pill text-bg-dark">Bestseller</span>
+                                </div>
+                                <p class="card-text text-body-secondary">Short, bold and full of flavour. Notes of dark
+                                    chocolate and roasted hazelnut.</p>
+                            </div>
+                            <div
+                                class="card-footer bg-transparent border-0 px-4 pb-4 d-flex justify-content-between align-items-center">
+                                <span class="fs-4 fw-bold">€2,80</span>
+                                <a href="#menu" class="btn btn-sm btn-outline-dark rounded-pill px-3">Order</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="card product-card h-100 border-0 shadow-sm">
+                            <div class="ratio ratio-4x3">
+                                <img src="img/cappuccino.jpg" class="card-img-top object-fit-cover"
+                                    alt="A cappuccino with a latte art leaf" loading="lazy">
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+                                    <h3 class="card-title h4 mb-0">Velvet Cappuccino</h3>
+                                    <span class="badge rounded-pill text-bg-warning">Signature</span>
+                                </div>
+                                <p class="card-text text-body-secondary">A double shot with silky milk foam. Ask for oat
+                                    milk at no extra cost.</p>
+                            </div>
+                            <div
+                                class="card-footer bg-transparent border-0 px-4 pb-4 d-flex justify-content-between align-items-center">
+                                <span class="fs-4 fw-bold">€3,90</span>
+                                <a href="#menu" class="btn btn-sm btn-outline-dark rounded-pill px-3">Order</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="card product-card h-100 border-0 shadow-sm">
+                            <div class="ratio ratio-4x3">
+                                <img src="img/iced-latte.jpg" class="card-img-top object-fit-cover"
+                                    alt="An iced caramel latte in a tall glass" loading="lazy">
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+                                    <h3 class="card-title h4 mb-0">Iced Caramel Latte</h3>
+                                    <span class="badge rounded-pill text-bg-success">New</span>
+                                </div>
+                                <p class="card-text text-body-secondary">Cold milk, espresso and our homemade salted
+                                    caramel over ice.</p>
+                            </div>
+                            <div
+                                class="card-footer bg-transparent border-0 px-4 pb-4 d-flex justify-content-between align-items-center">
+                                <span class="fs-4 fw-bold">€4,60</span>
+                                <a href="#menu" class="btn btn-sm btn-outline-dark rounded-pill px-3">Order</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="bg-espresso text-body py-5 py-lg-6" data-bs-theme="dark">
+            <div class="container">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-7">
+                                <img src="img/about-barista.jpg" class="img-fluid h-100 rounded-4 object-fit-cover"
+                                    alt="A barista making pour-over coffee" loading="lazy">
+                            </div>
+                            <div class="col-5 d-flex flex-column gap-3">
+                                <img src="img/about-beans.jpg" class="img-fluid rounded-4"
+                                    alt="Portafilters with coffee beans and ground coffee" loading="lazy">
+                                <div
+                                    class="bg-caramel text-white text-center rounded-4 p-4 flex-grow-1 d-flex flex-column justify-content-center">
+                                    <p class="display-6 fw-bold mb-0">10+</p>
+                                    <p class="small mb-0">years of roasting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 offset-lg-1">
+                        <p class="eyebrow">Our story</p>
+                        <h2 class="display-5 fw-bold mb-4">Roasted with patience, served with love</h2>
+                        <p class="text-body-secondary mb-4">Roast &amp; Co. started as a tiny roaster in a garage. Today
+                            we are a neighbourhood coffee bar, but the idea is still the same: great beans, honest
+                            prices and time for a chat.</p>
+                        <ul class="list-unstyled d-grid gap-3 mb-4">
+                            <li class="d-flex gap-3">
+                                <i class="bi bi-globe-europe-africa fs-4 text-caramel" aria-hidden="true"></i>
+                                <div>
+                                    <h3 class="h6 fw-bold mb-1">Direct trade</h3>
+                                    <p class="small text-body-secondary mb-0">We buy straight from farmers and pay above
+                                        fair-trade prices.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex gap-3">
+                                <i class="bi bi-fire fs-4 text-caramel" aria-hidden="true"></i>
+                                <div>
+                                    <h3 class="h6 fw-bold mb-1">Roasted weekly</h3>
+                                    <p class="small text-body-secondary mb-0">Small batches, so your coffee is always
+                                        fresh.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex gap-3">
+                                <i class="bi bi-recycle fs-4 text-caramel" aria-hidden="true"></i>
+                                <div>
+                                    <h3 class="h6 fw-bold mb-1">Zero-waste bar</h3>
+                                    <p class="small text-body-secondary mb-0">Bring your own cup and get €0,30 off.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="btn btn-outline-light btn-lg" href="#menu">Discover the menu</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="bg-cream py-5 py-lg-6">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <p class="eyebrow">The menu</p>
+                    <h2 class="display-5 fw-bold">Something for every moment</h2>
+                    <p class="text-body-secondary col-lg-6 mx-auto mb-0">From a quick espresso to a long brunch: pick a
+                        category and find your new favourite.</p>
+                </div>
+
+                <ul class="nav nav-pills menu-tabs justify-content-center gap-2 mb-5" id="menuTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active rounded-pill px-4" id="coffee-tab" data-bs-toggle="pill"
+                            data-bs-target="#coffee-pane" type="button" role="tab" aria-controls="coffee-pane"
+                            aria-selected="true">
+                            <i class="bi bi-cup-hot me-1" aria-hidden="true"></i> Coffee
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-pill px-4" id="tea-tab" data-bs-toggle="pill"
+                            data-bs-target="#tea-pane" type="button" role="tab" aria-controls="tea-pane"
+                            aria-selected="false">
+                            <i class="bi bi-cup-straw me-1" aria-hidden="true"></i> Tea &amp; more
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-pill px-4" id="bakery-tab" data-bs-toggle="pill"
+                            data-bs-target="#bakery-pane" type="button" role="tab" aria-controls="bakery-pane"
+                            aria-selected="false">
+                            <i class="bi bi-basket me-1" aria-hidden="true"></i> Bakery
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-lg-5 d-none d-lg-block">
+                        <img src="img/menu.jpg" class="img-fluid rounded-5 shadow"
+                            alt="Different coffees on a round wooden table, seen from above" loading="lazy">
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="tab-content" id="menuTabContent">
+                            <div class="tab-pane fade show active" id="coffee-pane" role="tabpanel"
+                                aria-labelledby="coffee-tab" tabindex="0">
+                                <ul class="list-group list-group-flush">
+                                    <li
+                                        class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3">
+                                        <div>
+                                            <h3 class="h5 mb-1">Espresso</h3>
+                                            <p class="small text-body-secondary mb-0">A single shot of our house blend
+                                            </p>
+                                        </div>
+                                        <span class="fw-bold text-nowrap">€2,80</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3">
+                                        <div>
+                                            <h3 class="h5 mb-1">Americano</h3>
+                                            <p class="small text-body-secondary mb-0">Espresso with hot water, long and
+                                                smooth</p>
+                                        </div>
+                                        <span class="fw-bold text-nowrap">€3,20</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3">
+                                        <div>
+                                            <h3 class="h5 mb-1">Cappuccino <span
+                                                    class="badge rounded-pill text-bg-dark align-middle ms-1">Popular</span>
+                                            </h3>
+                                            <p class="small text-body-secondary mb-0">Double shot, steamed milk and a
+                                                thick layer of foam</p>
+                                        </div>
+                                        <span class="fw-bold text-nowrap">€3,90</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3">
+                                        <div>
+                                            <h3 class="h5 mb-1">Flat White</h3>
+                                            <p class="small text-body-secondary mb-0">Ristretto with velvety micro-foam
+                                            </p>
+                                        </div>
+                                        <span class="fw-bold text-nowrap">€4,10</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3">
+                                        <div>
+                                            <h3 class="h5 mb-1">Cold Brew <span
+                                                    class="badge rounded-pill bg-caramel text-white align-middle ms-1">Seasonal</span>
+                                            </h3>
+                                            <p class="small text-body-secondary mb-0">Steeped for 18 hours, served over
+                                                ice</p>
+                                        </div>
+                                        <span class="fw-bold text-nowrap">€4,20</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-pane fade" id="tea-pane" role="tabpanel" aria-labelledby="tea-tab"
+                                tabindex="0">
+                                <ul class="list-group list-group-flush">
+                                    <li
+                                        class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3">
+                                        <div>
+                                            <h3 class="h5 mb-1">Chai Latte</h3>
+                                            <p class="small text-body-secondary mb-0">Spiced black tea with steamed milk
+                                            </p>
+                                        </div>
+                                        <span class="fw-bold text-nowrap">€4,20</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3">
+                                        <div>
+                                            <h3 class="h5 mb-1">Matcha Latte <span
+                                                    class="badge rounded-pill text-bg-success align-middle ms-1">Vegan</span>
+                                            </h3>
+                                            <p class="small text-body-secondary mb-0">Ceremonial matcha with oat milk
+                                            </p>
+                                        </div>
+                                        <span class="fw-bold text-nowrap">€4,50</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3">
+                                        <div>
+                                            <h3 class="h5 mb-1">Earl Grey</h3>
+                                            <p class="small text-body-secondary mb-0">Loose-leaf tea with bergamot</p>
+                                        </div>
+                                        <span class="fw-bold text-nowrap">€3,00</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3">
+                                        <div>
+                                            <h3 class="h5 mb-1">Hot Chocolate</h3>
+                                            <p class="small text-body-secondary mb-0">Belgian dark chocolate, whipped
+                                                cream on request</p>
+                                        </div>
+                                        <span class="fw-bold text-nowrap">€3,80</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3">
+                                        <div>
+                                            <h3 class="h5 mb-1">Fresh Orange Juice</h3>
+                                            <p class="small text-body-secondary mb-0">Squeezed to order</p>
+                                        </div>
+                                        <span class="fw-bold text-nowrap">€4,00</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-pane fade" id="bakery-pane" role="tabpanel" aria-labelledby="bakery-tab"
+                                tabindex="0">
+                                <ul class="list-group list-group-flush">
+                                    <li
+                                        class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3">
+                                        <div>
+                                            <h3 class="h5 mb-1">Butter Croissant</h3>
+                                            <p class="small text-body-secondary mb-0">Baked fresh every morning</p>
+                                        </div>
+                                        <span class="fw-bold text-nowrap">€2,60</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3">
+                                        <div>
+                                            <h3 class="h5 mb-1">Cinnamon Roll <span
+                                                    class="badge rounded-pill text-bg-dark align-middle ms-1">Bestseller</span>
+                                            </h3>
+                                            <p class="small text-body-secondary mb-0">Soft, sticky and still warm</p>
+                                        </div>
+                                        <span class="fw-bold text-nowrap">€3,40</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3">
+                                        <div>
+                                            <h3 class="h5 mb-1">Banana Bread <span
+                                                    class="badge rounded-pill text-bg-success align-middle ms-1">Vegan</span>
+                                            </h3>
+                                            <p class="small text-body-secondary mb-0">With walnuts and a hint of
+                                                cinnamon</p>
+                                        </div>
+                                        <span class="fw-bold text-nowrap">€3,20</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3">
+                                        <div>
+                                            <h3 class="h5 mb-1">Carrot Cake</h3>
+                                            <p class="small text-body-secondary mb-0">With cream cheese frosting</p>
+                                        </div>
+                                        <span class="fw-bold text-nowrap">€4,20</span>
+                                    </li>
+                                    <li
+                                        class="list-group-item bg-transparent px-0 py-3 d-flex justify-content-between gap-3">
+                                        <div>
+                                            <h3 class="h5 mb-1">Avocado Toast</h3>
+                                            <p class="small text-body-secondary mb-0">Sourdough, avocado, feta and chili
+                                                flakes</p>
+                                        </div>
+                                        <span class="fw-bold text-nowrap">€8,50</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="py-5 py-lg-6">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <p class="eyebrow">Reviews</p>
+                    <h2 class="display-5 fw-bold">What our guests say</h2>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <figure class="card h-100 border-0 shadow-sm p-4 mb-0">
+                            <div class="text-warning mb-3" aria-label="5 out of 5 stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                            </div>
+                            <blockquote class="blockquote fs-6 mb-4">
+                                <p>“The best flat white in town, and the staff remembers my name. My mornings start
+                                    here.”</p>
+                            </blockquote>
+                            <figcaption class="d-flex align-items-center gap-3 mt-auto">
+                                <span class="avatar rounded-circle">SV</span>
+                                <span>
+                                    <strong class="d-block">Sofie V.</strong>
+                                    <span class="small text-body-secondary">Regular since 2019</span>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col">
+                        <figure class="card h-100 border-0 shadow p-4 mb-0 bg-espresso" data-bs-theme="dark">
+                            <div class="text-warning mb-3" aria-label="5 out of 5 stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                            </div>
+                            <blockquote class="blockquote fs-6 mb-4">
+                                <p>“Great place to study: fast Wi-Fi, plenty of plugs and a cinnamon roll that is simply
+                                    unbeatable.”</p>
+                            </blockquote>
+                            <figcaption class="d-flex align-items-center gap-3 mt-auto">
+                                <span class="avatar rounded-circle">JM</span>
+                                <span>
+                                    <strong class="d-block">Jonas M.</strong>
+                                    <span class="small text-body-secondary">Student</span>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col">
+                        <figure class="card h-100 border-0 shadow-sm p-4 mb-0">
+                            <div class="text-warning mb-3" aria-label="4 out of 5 stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star"></i>
+                            </div>
+                            <blockquote class="blockquote fs-6 mb-4">
+                                <p>“We ordered their beans for our office. Friendly advice and the coffee tastes as good
+                                    as in the bar.”</p>
+                            </blockquote>
+                            <figcaption class="d-flex align-items-center gap-3 mt-auto">
+                                <span class="avatar rounded-circle">LD</span>
+                                <span>
+                                    <strong class="d-block">Lina D.</strong>
+                                    <span class="small text-body-secondary">Office manager</span>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <p class="text-center text-body-secondary small mt-5 mb-0">
+                    <i class="bi bi-google me-1" aria-hidden="true"></i> Rated <strong class="text-body">4.9 /
+                        5</strong> based on 1,200+ reviews
+                </p>
+            </div>
+        </section>
+
+        <section id="visit" class="cta text-white text-center py-5 py-lg-6" data-bs-theme="dark">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 col-xl-8">
+                        <p class="eyebrow">Come say hi</p>
+                        <h2 class="display-4 fw-bold mb-3">Visit our coffee bar</h2>
+                        <p class="lead opacity-75 mb-4">Grab a window seat, bring a friend or your laptop. Our baristas
+                            are ready for you.</p>
+                        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mb-5">
+                            <a class="btn btn-roast btn-lg px-4"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Gent" target="_blank"
+                                rel="noopener">
+                                <i class="bi bi-map me-1" aria-hidden="true"></i> Get directions
+                            </a>
+                            <a class="btn btn-outline-light btn-lg px-4" href="#contact">Reserve a table</a>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-md-3 g-3">
+                            <div class="col">
+                                <div
+                                    class="h-100 p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-25">
+                                    <i class="bi bi-geo-alt fs-3 text-caramel" aria-hidden="true"></i>
+                                    <h3 class="h6 fw-bold mt-2 mb-1">Address</h3>
+                                    <p class="small opacity-75 mb-0">Koffiestraat 12<br>9000 Gent</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div
+                                    class="h-100 p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-25">
+                                    <i class="bi bi-clock fs-3 text-caramel" aria-hidden="true"></i>
+                                    <h3 class="h6 fw-bold mt-2 mb-1">Opening hours</h3>
+                                    <p class="small opacity-75 mb-0">Mon–Fri 7:30–18:00<br>Sat–Sun 9:00–17:00</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div
+                                    class="h-100 p-4 rounded-4 bg-white bg-opacity-10 border border-white border-opacity-25">
+                                    <i class="bi bi-wifi fs-3 text-caramel" aria-hidden="true"></i>
+                                    <h3 class="h6 fw-bold mt-2 mb-1">Free Wi-Fi</h3>
+                                    <p class="small opacity-75 mb-0">Plenty of plugs,<br>perfect for studying</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5 py-lg-6">
+            <div class="container">
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-5">
+                        <p class="eyebrow">Contact</p>
+                        <h2 class="display-5 fw-bold mb-3">Questions, events or a big order?</h2>
+                        <p class="text-body-secondary mb-4">Send us a message and we will get back to you within one
+                            working day.</p>
+                        <ul class="list-unstyled d-grid gap-3 mb-4">
+                            <li class="d-flex align-items-center gap-3">
+                                <span class="icon-circle"><i class="bi bi-telephone" aria-hidden="true"></i></span>
+                                <a href="tel:+3291234567" class="link-body-emphasis text-decoration-none">+32 9 123 45
+                                    67</a>
+                            </li>
+                            <li class="d-flex align-items-center gap-3">
+                                <span class="icon-circle"><i class="bi bi-envelope" aria-hidden="true"></i></span>
+                                <a href="mailto:hello@roastandco.example"
+                                    class="link-body-emphasis text-decoration-none">hello@roastandco.example</a>
+                            </li>
+                            <li class="d-flex align-items-center gap-3">
+                                <span class="icon-circle"><i class="bi bi-instagram" aria-hidden="true"></i></span>
+                                <span>@roastandco</span>
+                            </li>
+                        </ul>
+                        <img src="img/contact-terrace.jpg" class="img-fluid rounded-4 d-none d-lg-block"
+                            alt="A sunny café terrace in a cosy street" loading="lazy">
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="card border-0 shadow-sm p-4 p-md-5">
+                            <h3 class="h4 mb-4">Send us a message</h3>
+
+                            <div id="formSuccess" class="alert alert-success d-none" role="alert">
+                                <i class="bi bi-check-circle me-1" aria-hidden="true"></i> Thank you! Your message has
+                                been sent.
+                            </div>
+
+                            <form id="contactForm" class="row g-3 needs-validation" novalidate>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="firstName" placeholder="First name"
+                                            autocomplete="given-name" required>
+                                        <label for="firstName">First name</label>
+                                        <div class="invalid-feedback">Please enter your first name.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="lastName" placeholder="Last name"
+                                            autocomplete="family-name" required>
+                                        <label for="lastName">Last name</label>
+                                        <div class="invalid-feedback">Please enter your last name.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="name@example.com" autocomplete="email" required>
+                                        <label for="email">Email address</label>
+                                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="subject" required>
+                                            <option value="" selected disabled>Choose a subject</option>
+                                            <option>General question</option>
+                                            <option>Table reservation</option>
+                                            <option>Private event</option>
+                                            <option>Beans for my office</option>
+                                        </select>
+                                        <label for="subject">Subject</label>
+                                        <div class="invalid-feedback">Please choose a subject.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control message-field" id="message"
+                                            placeholder="Your message" required></textarea>
+                                        <label for="message">Your message</label>
+                                        <div class="invalid-feedback">Please write a short message.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletter">
+                                        <label class="form-check-label" for="newsletter">Keep me posted about new
+                                            roasts</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-roast btn-lg w-100" type="submit">
+                                        Send message <i class="bi bi-send ms-1" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="bg-espresso text-body pt-5 pb-4" data-bs-theme="dark">
+        <div class="container">
+            <div class="row g-4 pb-4">
+                <div class="col-lg-4">
+                    <a class="footer-brand d-inline-flex align-items-center gap-2 text-decoration-none text-body mb-3"
+                        href="#home">
+                        <i class="bi bi-cup-hot-fill text-caramel" aria-hidden="true"></i> Roast &amp; Co.
+                    </a>
+                    <p class="small text-body-secondary mb-4">Artisan coffee for every moment. Roasted in Gent, served
+                        with a smile.</p>
+                    <div class="d-flex gap-2">
+                        <a class="btn btn-outline-light btn-sm rounded-circle social-btn" href="#"
+                            aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-sm rounded-circle social-btn" href="#"
+                            aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a class="btn btn-outline-light btn-sm rounded-circle social-btn" href="#"
+                            aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h2 class="h6 text-uppercase fw-bold mb-3">Explore</h2>
+                    <ul class="list-unstyled d-grid gap-2 small mb-0">
+                        <li><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover"
+                                href="#favorites">Favorites</a></li>
+                        <li><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover"
+                                href="#about">About</a></li>
+                        <li><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover"
+                                href="#menu">Menu</a></li>
+                        <li><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover"
+                                href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h2 class="h6 text-uppercase fw-bold mb-3">Visit</h2>
+                    <address class="small text-body-secondary mb-0">
+                        Koffiestraat 12<br>
+                        9000 Gent<br>
+                        Mon–Fri 7:30–18:00<br>
+                        Sat–Sun 9:00–17:00
+                    </address>
+                </div>
+
+                <div class="col-lg-4">
+                    <h2 class="h6 text-uppercase fw-bold mb-3">Newsletter</h2>
+                    <p class="small text-body-secondary">New roasts and events, once a month. No spam.</p>
+                    <form class="input-group" onsubmit="return false;">
+                        <label for="newsletterEmail" class="visually-hidden">Email address</label>
+                        <input type="email" class="form-control" id="newsletterEmail" placeholder="you@example.com">
+                        <button class="btn btn-roast" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div
+                class="border-top pt-4 d-flex flex-column flex-sm-row justify-content-between gap-2 small text-body-secondary">
+                <p class="mb-0">&copy; 2026 Roast &amp; Co. &middot; A school project built with Bootstrap 5.3</p>
+                <p class="mb-0">Photos: <a class="link-light" href="https://unsplash.com" target="_blank"
+                        rel="noopener">Unsplash</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" id="backToTop"
+        class="btn btn-roast rounded-circle shadow position-fixed bottom-0 end-0 m-4 back-to-top"
+        aria-label="Back to top">
+        <i class="bi bi-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

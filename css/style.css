@@ -1,0 +1,319 @@
+/* ==========================================================
+   Stap 0 – Startproject
+   ========================================================== */
+
+/* Eigen huisstijl: kleuren als CSS-variabelen */
+:root {
+    --roast-espresso: #2b1d16;
+    --roast-caramel: #c8814a;
+    --roast-caramel-dark: #97562a;
+    --roast-cream: #f5ede1;
+    --roast-foam: #fcf8f2;
+
+    --roast-font-heading: "Fraunces", Georgia, serif;
+    --roast-font-body: "Manrope", system-ui, sans-serif;
+
+    /* Bootstrap-variabelen overschrijven: zo past heel Bootstrap zich aan */
+    --bs-body-font-family: var(--roast-font-body);
+    --bs-body-bg: var(--roast-foam);
+    --bs-body-color: #3b2c24;
+    --bs-body-color-rgb: 59, 44, 36;
+    --bs-secondary-color: rgba(59, 44, 36, 0.75);
+    --bs-link-color: var(--roast-caramel-dark);
+    --bs-link-color-rgb: 151, 86, 42;
+    --bs-link-hover-color: var(--roast-espresso);
+    --bs-link-hover-color-rgb: 43, 29, 22;
+}
+
+/* Titels in een serif-lettertype */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+    font-family: var(--roast-font-heading);
+    letter-spacing: -0.01em;
+}
+
+/* Eigen knop, gebouwd met de CSS-variabelen van Bootstrap's .btn */
+.btn-roast {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--roast-caramel-dark);
+    --bs-btn-border-color: var(--roast-caramel-dark);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--roast-espresso);
+    --bs-btn-hover-border-color: var(--roast-espresso);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--roast-espresso);
+    --bs-btn-active-border-color: var(--roast-espresso);
+    --bs-btn-focus-shadow-rgb: 200, 129, 74;
+}
+
+
+/* ==========================================================
+   Stap 1 – Navbar
+   ========================================================== */
+
+/* Accentkleur: donkere karamel op lichte achtergrond, lichte karamel op donkere */
+:root {
+    --roast-accent: var(--roast-caramel-dark);
+}
+
+[data-bs-theme="dark"] {
+    --roast-accent: var(--roast-caramel);
+}
+
+.text-caramel {
+    color: var(--roast-accent) !important;
+}
+
+/* Navbar in espresso-bruin. .navbar.navbar-roast is sterker dan Bootstrap's eigen regel */
+.navbar.navbar-roast {
+    --bs-navbar-color: rgba(255, 255, 255, 0.75);
+    --bs-navbar-hover-color: #fff;
+    --bs-navbar-active-color: var(--roast-caramel);
+    --bs-navbar-brand-color: #fff;
+    --bs-navbar-brand-hover-color: #fff;
+    background-color: var(--roast-espresso);
+}
+
+.navbar-roast .navbar-brand {
+    font-family: var(--roast-font-heading);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-roast .nav-link {
+    font-weight: 500;
+}
+
+
+/* ==========================================================
+   Stap 2 – Hero
+   ========================================================== */
+
+/* Achtergrondkleur als herbruikbare utility-class */
+.bg-cream {
+    background-color: var(--roast-cream) !important;
+}
+
+/* Bootstrap stopt bij py-5 (3rem). We maken een py-6 in dezelfde stijl. */
+.py-6 {
+    padding-top: 4.5rem !important;
+    padding-bottom: 4.5rem !important;
+}
+
+@media (min-width: 992px) {
+    .py-lg-6 {
+        padding-top: 6rem !important;
+        padding-bottom: 6rem !important;
+    }
+}
+
+/* De hero-foto mag niet hoger worden dan 560px */
+.hero-img img {
+    max-height: 560px;
+}
+
+/* Rond icoon (hergebruikt in de hero en bij contact) */
+.icon-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--roast-cream);
+    color: var(--roast-caramel-dark);
+    font-size: 1.25rem;
+}
+
+
+/* ==========================================================
+   Stap 3 – Populaire koffies
+   ========================================================== */
+
+/* Klein label boven een sectietitel */
+.eyebrow {
+    margin-bottom: 0.75rem;
+    color: var(--roast-accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+/* Kaart komt iets omhoog bij hover (alleen als de gebruiker beweging toelaat) */
+@media (prefers-reduced-motion: no-preference) {
+    .product-card {
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .product-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--bs-box-shadow-lg) !important;
+    }
+}
+
+
+/* ==========================================================
+   Stap 4 – Over Roast & Co.
+   ========================================================== */
+
+/* Extra achtergrondkleuren */
+.bg-espresso {
+    background-color: var(--roast-espresso) !important;
+}
+
+.bg-caramel {
+    background-color: var(--roast-caramel-dark) !important;
+}
+
+/* Warmere tekstkleuren in elk blok met data-bs-theme="dark" */
+[data-bs-theme="dark"] {
+    --bs-body-color: #efe6da;
+    --bs-body-color-rgb: 239, 230, 218;
+    --bs-secondary-color: rgba(239, 230, 218, 0.7);
+}
+
+
+/* ==========================================================
+   Stap 5 – Menukaart
+   ========================================================== */
+
+/* Tabknoppen in huisstijl via de CSS-variabelen van .nav en .nav-pills */
+.menu-tabs {
+    --bs-nav-link-color: var(--roast-espresso);
+    --bs-nav-link-hover-color: var(--roast-caramel-dark);
+    --bs-nav-pills-link-active-color: #fff;
+    --bs-nav-pills-link-active-bg: var(--roast-espresso);
+}
+
+.menu-tabs .nav-link {
+    border: 1px solid var(--bs-border-color);
+    background-color: #fff;
+    font-weight: 600;
+}
+
+
+/* ==========================================================
+   Stap 6 – Klantenbeoordelingen
+   ========================================================== */
+
+/* Ronde initialen in plaats van een profielfoto */
+.avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--roast-cream);
+    color: var(--roast-espresso);
+    font-weight: 700;
+}
+
+[data-bs-theme="dark"] .avatar {
+    background-color: var(--roast-caramel-dark);
+    color: #fff;
+}
+
+
+/* ==========================================================
+   Stap 7 – Call-to-action
+   ========================================================== */
+
+/* Foto als achtergrond met een donkere laag (gradient) erover voor leesbare tekst.
+   Het pad start vanuit de map css/, daarom ../img/ */
+.cta {
+    background:
+        linear-gradient(rgba(43, 29, 22, 0.78), rgba(43, 29, 22, 0.9)),
+        url("../img/cta-cafe.jpg") center / cover no-repeat;
+}
+
+
+/* ==========================================================
+   Stap 8 – Contactformulier
+   ========================================================== */
+
+/* Een hoger tekstvak (floating labels hebben een vaste hoogte nodig) */
+.message-field {
+    height: 160px !important;
+}
+
+/* Focus en aangevinkte checkbox in huisstijl */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--roast-caramel);
+    box-shadow: 0 0 0 0.25rem rgba(200, 129, 74, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: var(--roast-caramel-dark);
+    border-color: var(--roast-caramel-dark);
+}
+
+
+/* ==========================================================
+   Stap 9 – Footer
+   ========================================================== */
+
+.footer-brand {
+    font-family: var(--roast-font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Ronde, even grote social-knoppen */
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+
+/* ==========================================================
+   Stap 10 – Afwerking
+   ========================================================== */
+
+/* Ankerlinks stoppen onder de sticky navbar in plaats van erachter */
+html {
+    scroll-padding-top: 4.5rem;
+}
+
+/* Terug-naar-boven-knop: standaard verborgen */
+.back-to-top {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    z-index: 1030;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(1rem);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+/* JavaScript voegt .is-visible toe na wat scrollen */
+.back-to-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+}
